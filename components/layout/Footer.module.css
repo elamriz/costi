@@ -1,0 +1,230 @@
+.footer {
+    background: var(--color-bg-surface);
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--space-9);
+    padding-bottom: var(--space-6);
+    margin-top: auto;
+}
+
+.container {
+    max-width: var(--container-xl);
+    margin: 0 auto;
+    padding-inline: var(--space-5);
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding-inline: var(--space-7);
+    }
+}
+
+.grid {
+    display: grid;
+    gap: var(--space-7);
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    }
+}
+
+/* Brand Column */
+.brandColumn {
+    grid-column: 1 / -1;
+}
+
+@media (min-width: 1024px) {
+    .brandColumn {
+        grid-column: auto;
+    }
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    font-size: var(--text-xl);
+    font-weight: 700;
+    text-decoration: none;
+    margin-bottom: var(--space-4);
+}
+
+.logoText {
+    color: var(--color-text-primary);
+}
+
+.logoBolt {
+    color: var(--color-accent);
+}
+
+.logoAccent {
+    color: var(--color-accent);
+}
+
+.tagline {
+    color: var(--color-text-secondary);
+    font-size: var(--text-sm);
+    line-height: var(--leading-relaxed);
+    max-width: 280px;
+    margin-bottom: var(--space-4);
+}
+
+.badges {
+    display: flex;
+    gap: var(--space-2);
+}
+
+.badge {
+    display: inline-flex;
+    padding: var(--space-1) var(--space-3);
+    background: var(--color-bg-elevated);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+    font-size: var(--text-xs);
+    color: var(--color-text-secondary);
+}
+
+/* Links Columns */
+.linksColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.columnTitle {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-4);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.linksList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.link {
+    color: var(--color-text-secondary);
+    font-size: var(--text-sm);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.link:hover {
+    color: var(--color-text-primary);
+}
+
+.linkAccent {
+    color: var(--color-accent);
+    font-size: var(--text-sm);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.linkAccent:hover {
+    color: var(--color-accent-hover);
+}
+
+/* Contact Column */
+.contactColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin-bottom: var(--space-5);
+}
+
+.contactLink {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    color: var(--color-text-secondary);
+    font-size: var(--text-sm);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.contactLink:hover {
+    color: var(--color-accent);
+}
+
+.contactIcon {
+    font-size: var(--text-base);
+}
+
+.hours {
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--color-border);
+}
+
+.hoursLabel {
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--space-1);
+}
+
+.hoursValue {
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+}
+
+/* Bottom Bar */
+.bottomBar {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    padding-top: var(--space-7);
+    margin-top: var(--space-7);
+    border-top: 1px solid var(--color-border);
+}
+
+@media (min-width: 640px) {
+    .bottomBar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.copyright {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+}
+
+.legalLinks {
+    display: flex;
+    gap: var(--space-3);
+    align-items: center;
+}
+
+.legalLink {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.legalLink:hover {
+    color: var(--color-text-secondary);
+}
+
+.separator {
+    color: var(--color-text-muted);
+}

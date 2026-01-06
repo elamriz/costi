@@ -1,0 +1,136 @@
+.stickyCta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-4);
+    background: rgba(13, 13, 13, 0.95);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--color-border);
+    z-index: var(--z-sticky);
+    animation: slideUp 0.3s ease;
+}
+
+/* Hide on larger screens - show floating sidebar instead */
+@media (min-width: 1024px) {
+    .stickyCta {
+        bottom: auto;
+        top: 50%;
+        left: auto;
+        right: var(--space-5);
+        transform: translateY(-50%);
+        flex-direction: column;
+        padding: var(--space-3);
+        border-top: none;
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--color-border);
+        background: var(--color-bg-surface);
+        gap: var(--space-3);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 1024px) {
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            transform: translateY(-50%) translateX(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(-50%) translateX(0);
+        }
+    }
+}
+
+/* WhatsApp - Primary green button */
+.ctaButtonWhatsApp {
+    flex: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-4);
+    background: #25D366;
+    color: white;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+}
+
+@media (min-width: 1024px) {
+    .ctaButtonWhatsApp {
+        flex: none;
+        width: 52px;
+        height: 52px;
+        padding: 0;
+        border-radius: var(--radius-full);
+    }
+
+    .ctaButtonWhatsApp .ctaLabel {
+        display: none;
+    }
+}
+
+.ctaButtonWhatsApp:hover {
+    background: #128C7E;
+    color: white;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+}
+
+.ctaButton {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-4);
+    background: var(--color-bg-elevated);
+    color: var(--color-text-primary);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+}
+
+@media (min-width: 1024px) {
+    .ctaButton {
+        flex: none;
+        width: 48px;
+        height: 48px;
+        padding: 0;
+        border-radius: var(--radius-full);
+    }
+
+    .ctaButton .ctaLabel {
+        display: none;
+    }
+}
+
+.ctaButton:hover {
+    background: var(--color-bg-surface);
+    border-color: var(--color-accent);
+}
+
+.icon {
+    flex-shrink: 0;
+}
+
+.ctaLabel {
+    white-space: nowrap;
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "conformite-rgie",
+    "title": "Conformité RGIE",
+    "shortTitle": "RGIE",
+    "description": "Mise en conformité électrique selon le Règlement Général sur les Installations Électriques en Belgique.",
+    "shortDescription": "Préparation et correction pour le contrôle RGIE obligatoire.",
+    "icon": "shield-check",
+    "metaTitle": "Mise en Conformité RGIE Bruxelles | COSTI ELEC",
+    "metaDescription": "Mise en conformité RGIE à Bruxelles par électricien agréé. Préparation contrôle, correction infractions. Devis gratuit 7j/7. ☎ +32 489 98 62 09",
+    "keywords": ["mise en conformité RGIE Bruxelles", "contrôle électrique RGIE", "rapport RGIE Belgique", "électricien agréé RGIE"],
+    "priceFrom": 250,
+    "relatedLocations": ["uccle", "ixelles", "etterbeek"],
+    "features": [
+      "Diagnostic complet de l'installation",
+      "Correction des infractions détectées",
+      "Préparation du dossier de contrôle",
+      "Accompagnement le jour du contrôle",
+      "Certificat de conformité"
+    ]
+  },
+  {
+    "slug": "renovation-electrique",
+    "title": "Rénovation Électrique",
+    "shortTitle": "Rénovation",
+    "description": "Rénovation électrique complète ou partielle pour maisons anciennes, appartements et immeubles à Bruxelles.",
+    "shortDescription": "Modernisez votre installation électrique en toute sécurité.",
+    "icon": "wrench",
+    "metaTitle": "Rénovation Électrique Bruxelles | COSTI ELEC",
+    "metaDescription": "Rénovation électrique complète ou partielle à Bruxelles. Maisons anciennes, appartements. Conformité RGIE garantie. Devis gratuit 7j/7.",
+    "keywords": ["rénovation électrique Bruxelles", "refaire électricité maison ancienne", "mise aux normes électrique", "rénovation tableau électrique"],
+    "priceFrom": 1500,
+    "relatedLocations": ["uccle", "woluwe-saint-pierre", "auderghem"],
+    "features": [
+      "Diagnostic de l'existant",
+      "Remplacement complet du câblage",
+      "Installation nouveau tableau",
+      "Mise aux normes RGIE incluse",
+      "Travaux propres et soignés"
+    ]
+  },
+  {
+    "slug": "tableau-electrique",
+    "title": "Tableau Électrique & Schémas",
+    "shortTitle": "Tableau",
+    "description": "Installation, remplacement de tableaux électriques et création de schémas conformes RGIE.",
+    "shortDescription": "Le cœur de votre installation, aux normes actuelles.",
+    "icon": "layout-grid",
+    "metaTitle": "Tableau Électrique Bruxelles | Plans & Installation",
+    "metaDescription": "Installation et remplacement de tableau électrique à Bruxelles. Schémas conformes RGIE. Électricien agréé. Devis gratuit ☎ +32 489 98 62 09",
+    "keywords": ["tableau électrique Bruxelles", "remplacement tableau électrique", "schéma électrique Bruxelles", "plan électrique maison"],
+    "priceFrom": 800,
+    "relatedLocations": ["ixelles", "etterbeek", "woluwe-saint-lambert"],
+    "features": [
+      "Tableaux aux normes 2024",
+      "Disjoncteurs différentiels",
+      "Schémas unifilaires",
+      "Plans de situation",
+      "Documentation complète"
+    ]
+  },
+  {
+    "slug": "mise-en-securite",
+    "title": "Mise en Sécurité",
+    "shortTitle": "Sécurité",
+    "description": "Sécurisation rapide de votre installation électrique pour éliminer les risques immédiats.",
+    "shortDescription": "Éliminez les dangers électriques de votre habitation.",
+    "icon": "alert-triangle",
+    "metaTitle": "Mise en Sécurité Électrique Bruxelles | COSTI ELEC",
+    "metaDescription": "Sécurisation de votre installation électrique à Bruxelles. Élimination des risques, conformité. Intervention rapide 7j/7. Devis gratuit.",
+    "keywords": ["mise en sécurité électrique Bruxelles", "sécurisation installation électrique", "dangers électricité maison"],
+    "priceFrom": 150,
+    "relatedLocations": ["uccle", "ixelles", "watermael-boitsfort"],
+    "features": [
+      "Diagnostic des risques",
+      "Protection surcharges",
+      "Mise à la terre",
+      "Remplacement prises défectueuses",
+      "Intervention urgente possible"
+    ]
+  },
+  {
+    "slug": "videophone-interphone",
+    "title": "Vidéophone & Interphone",
+    "shortTitle": "Vidéophone",
+    "description": "Installation de systèmes de vidéophone et interphone pour maisons, appartements et immeubles.",
+    "shortDescription": "Sécurisez vos entrées avec un système moderne.",
+    "icon": "video",
+    "metaTitle": "Vidéophone & Interphone Bruxelles | COSTI ELEC",
+    "metaDescription": "Installation vidéophone et interphone à Bruxelles. Maisons, appartements, immeubles. Marques premium. Devis gratuit 7j/7.",
+    "keywords": ["installation vidéophone Bruxelles", "interphone immeuble Bruxelles", "parlophone Bruxelles", "visiophone maison"],
+    "priceFrom": 350,
+    "relatedLocations": ["ixelles", "etterbeek", "woluwe-saint-lambert"],
+    "features": [
+      "Vidéophones haute définition",
+      "Connexion smartphone",
+      "Multi-logements",
+      "Marques premium (Comelit, Bticino)",
+      "Installation soignée"
+    ]
+  },
+  {
+    "slug": "borne-recharge-electrique",
+    "title": "Borne de Recharge",
+    "shortTitle": "Borne EV",
+    "description": "Installation de bornes de recharge pour véhicules électriques en maison, copropriété ou entreprise.",
+    "shortDescription": "Rechargez votre véhicule électrique chez vous.",
+    "icon": "plug-zap",
+    "metaTitle": "Borne de Recharge Électrique Bruxelles | COSTI ELEC",
+    "metaDescription": "Installation borne de recharge à Bruxelles. Maisons, copropriétés, entreprises. Installateur agréé. Primes disponibles. Devis gratuit.",
+    "keywords": ["installation borne recharge Bruxelles", "borne voiture électrique maison", "wallbox Bruxelles", "borne copropriété Bruxelles"],
+    "priceFrom": 1200,
+    "relatedLocations": ["uccle", "woluwe-saint-pierre", "tervuren"],
+    "features": [
+      "Bornes 7kW à 22kW",
+      "Marques certifiées (Wallbox, EVBox)",
+      "Gestion intelligente",
+      "Solutions copropriété",
+      "Aide aux primes"
+    ]
+  }
+]

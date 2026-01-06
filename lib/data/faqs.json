@@ -1,0 +1,140 @@
+[
+    {
+        "id": "general-1",
+        "category": "general",
+        "question": "Combien coûte une mise en conformité RGIE à Bruxelles ?",
+        "answer": "Le coût d'une mise en conformité RGIE varie selon l'état de votre installation. Comptez entre 250€ et 2000€ pour une intervention complète. Nous proposons un diagnostic gratuit pour vous fournir un devis précis adapté à votre situation."
+    },
+    {
+        "id": "general-2",
+        "category": "general",
+        "question": "Intervenez-vous le week-end à Bruxelles ?",
+        "answer": "Oui, COSTI ELEC est disponible 7 jours sur 7, y compris le week-end, pour toute la région bruxelloise et sa périphérie. Nous comprenons que vos disponibilités sont limitées en semaine."
+    },
+    {
+        "id": "general-3",
+        "category": "general",
+        "question": "Quels services électriques proposez-vous ?",
+        "answer": "Nous proposons : mise en conformité RGIE, rénovation électrique complète ou partielle, installation et remplacement de tableaux électriques, mise en sécurité, installation de vidéophones et interphones, et installation de bornes de recharge pour véhicules électriques."
+    },
+    {
+        "id": "general-4",
+        "category": "general",
+        "question": "Comment demander un devis gratuit ?",
+        "answer": "Vous pouvez nous contacter par téléphone au +32 489 98 62 09, par WhatsApp, ou via notre formulaire en ligne. Nous vous recontactons sous 24h pour planifier une visite de diagnostic gratuite."
+    },
+    {
+        "id": "general-5",
+        "category": "general",
+        "question": "Êtes-vous agréé pour les bornes de recharge ?",
+        "answer": "Oui, nous sommes installateurs agréés pour les principales marques de bornes de recharge (Wallbox, EVBox, Alfen). Nous pouvons également vous accompagner dans les démarches pour obtenir les primes régionales."
+    },
+    {
+        "id": "rgie-1",
+        "category": "rgie",
+        "question": "Quel est le délai pour une mise en conformité RGIE ?",
+        "answer": "Le délai dépend de l'ampleur des travaux nécessaires. Pour des corrections mineures, comptez 1 à 3 jours. Pour une mise en conformité complète d'une installation ancienne, prévoyez 1 à 2 semaines."
+    },
+    {
+        "id": "rgie-2",
+        "category": "rgie",
+        "question": "Que se passe-t-il si mon installation n'est pas conforme ?",
+        "answer": "En cas de non-conformité lors d'un contrôle, vous recevez un rapport d'infractions. Vous avez généralement 12 mois pour effectuer les corrections et repasser un contrôle. Nous pouvons analyser votre rapport et corriger toutes les infractions."
+    },
+    {
+        "id": "rgie-3",
+        "category": "rgie",
+        "question": "Dois-je être présent lors du contrôle RGIE ?",
+        "answer": "Il est recommandé d'être présent ou de mandater quelqu'un qui connaît l'installation. L'inspecteur aura besoin d'accéder à tous les espaces et pourra poser des questions sur l'historique des travaux."
+    },
+    {
+        "id": "rgie-4",
+        "category": "rgie",
+        "question": "Quelle est la durée de validité d'un contrôle RGIE ?",
+        "answer": "Un contrôle RGIE positif est valable 25 ans pour une installation domestique. Cependant, un nouveau contrôle est obligatoire à chaque vente du bien ou renforcement significatif de l'installation."
+    },
+    {
+        "id": "rgie-5",
+        "category": "rgie",
+        "question": "Comment lire un rapport d'infraction RGIE ?",
+        "answer": "Le rapport liste les infractions par code (ex: BA4, BB1). Chaque code correspond à un type de problème. Nous pouvons analyser gratuitement votre rapport et vous expliquer clairement ce qui doit être corrigé."
+    },
+    {
+        "id": "renovation-1",
+        "category": "renovation",
+        "question": "Combien coûte une rénovation électrique complète ?",
+        "answer": "Une rénovation électrique complète coûte entre 80€ et 120€ par m² pour un appartement, et entre 100€ et 150€ par m² pour une maison. Ces prix incluent le tableau, le câblage, les prises et la conformité RGIE."
+    },
+    {
+        "id": "renovation-2",
+        "category": "renovation",
+        "question": "Faut-il tout refaire ou peut-on rénover partiellement ?",
+        "answer": "Cela dépend de l'état de votre installation. Si le câblage principal est en bon état, une rénovation partielle (tableau + circuits problématiques) peut suffire. Nous évaluons cela lors du diagnostic gratuit."
+    },
+    {
+        "id": "renovation-3",
+        "category": "renovation",
+        "question": "Combien de temps durent les travaux ?",
+        "answer": "Pour un appartement, comptez 3 à 5 jours pour une rénovation complète. Pour une maison, prévoyez 1 à 3 semaines selon la surface et la complexité. Nous minimisons la gêne en travaillant par zones."
+    },
+    {
+        "id": "renovation-4",
+        "category": "renovation",
+        "question": "Travaillez-vous dans les maisons bruxelloises anciennes ?",
+        "answer": "Oui, nous sommes spécialisés dans les maisons de maître et bâtiments anciens de Bruxelles. Nous maîtrisons les techniques de câblage discret pour préserver le cachet de votre bien."
+    },
+    {
+        "id": "renovation-5",
+        "category": "renovation",
+        "question": "La rénovation inclut-elle la conformité RGIE ?",
+        "answer": "Oui, toute rénovation que nous réalisons est conforme au RGIE. Nous fournissons les schémas électriques requis et préparons votre installation pour le contrôle officiel."
+    },
+    {
+        "id": "ev-1",
+        "category": "ev",
+        "question": "Quel type de borne pour ma voiture électrique ?",
+        "answer": "Pour un usage domestique, une borne 7,4 kW (monophasé) ou 11 kW (triphasé) convient à la plupart des véhicules. Pour une recharge plus rapide, optez pour une 22 kW si votre installation le permet."
+    },
+    {
+        "id": "ev-2",
+        "category": "ev",
+        "question": "Mon installation électrique est-elle compatible ?",
+        "answer": "Nous vérifions cela lors de notre visite gratuite. Parfois, une augmentation de puissance auprès de votre fournisseur ou un renforcement du tableau est nécessaire avant l'installation."
+    },
+    {
+        "id": "ev-3",
+        "category": "ev",
+        "question": "Combien coûte une borne de recharge complète ?",
+        "answer": "Comptez entre 1200€ et 2500€ pour une installation complète, borne incluse. Ce prix varie selon la puissance, la marque choisie et la distance entre votre tableau et l'emplacement de la borne."
+    },
+    {
+        "id": "ev-4",
+        "category": "ev",
+        "question": "Quelles sont les primes en Région bruxelloise ?",
+        "answer": "La Région bruxelloise offre des primes pour l'installation de bornes de recharge. Les montants et conditions évoluent régulièrement. Nous vous accompagnons dans les démarches administratives."
+    },
+    {
+        "id": "ev-5",
+        "category": "ev",
+        "question": "Puis-je installer une borne dans mon parking souterrain ?",
+        "answer": "Oui, c'est possible mais nécessite l'accord de la copropriété et parfois des travaux spécifiques (câblage, ventilation, comptage séparé). Nous avons l'expérience des installations en copropriété."
+    },
+    {
+        "id": "prix-1",
+        "category": "prix",
+        "question": "Vos devis sont-ils gratuits ?",
+        "answer": "Oui, tous nos devis sont gratuits et sans engagement. Nous nous déplaçons pour évaluer précisément vos besoins avant de vous proposer un prix ferme."
+    },
+    {
+        "id": "prix-2",
+        "category": "prix",
+        "question": "Proposez-vous des facilités de paiement ?",
+        "answer": "Pour les travaux importants, nous pouvons proposer un paiement échelonné : un acompte à la commande, un paiement intermédiaire et le solde à la réception des travaux."
+    },
+    {
+        "id": "prix-3",
+        "category": "prix",
+        "question": "Le prix inclut-il la TVA ?",
+        "answer": "Tous nos devis sont exprimés HTVA. Pour les habitations de plus de 10 ans, vous bénéficiez du taux réduit de TVA à 6% au lieu de 21% pour les travaux de rénovation."
+    }
+]

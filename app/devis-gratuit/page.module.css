@@ -1,0 +1,406 @@
+.page {
+    padding-bottom: 80px;
+    min-height: 100vh;
+}
+
+@media (min-width: 1024px) {
+    .page {
+        padding-bottom: 0;
+    }
+}
+
+/* Hero */
+.hero {
+    padding: var(--space-8) 0 var(--space-6);
+    text-align: center;
+}
+
+.container {
+    max-width: var(--container-xl);
+    margin: 0 auto;
+    padding-inline: var(--space-5);
+}
+
+.eyebrow {
+    display: inline-block;
+    padding: var(--space-1) var(--space-4);
+    background: var(--color-accent);
+    color: var(--color-text-on-accent);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-radius: var(--radius-full);
+    margin-bottom: var(--space-4);
+}
+
+.title {
+    font-size: clamp(2rem, 4vw, var(--text-4xl));
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-3);
+}
+
+.highlight {
+    color: var(--color-accent);
+}
+
+.description {
+    font-size: var(--text-base);
+    color: var(--color-text-secondary);
+}
+
+/* Wizard Section */
+.wizardSection {
+    padding: var(--space-6) 0 var(--space-10);
+}
+
+.wizardContainer {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-inline: var(--space-5);
+}
+
+/* Progress */
+.progress {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--space-8);
+    position: relative;
+}
+
+.progress::before {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: 32px;
+    right: 32px;
+    height: 2px;
+    background: var(--color-border);
+    z-index: 0;
+}
+
+.progressStep {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    position: relative;
+    z-index: 1;
+}
+
+.progressNumber {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-bg-elevated);
+    border: 2px solid var(--color-border);
+    border-radius: 50%;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--color-text-muted);
+    transition: all var(--transition-base);
+}
+
+.progressStep.active .progressNumber {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-text-on-accent);
+}
+
+.progressLabel {
+    font-size: var(--text-xs);
+    color: var(--color-text-muted);
+}
+
+.progressStep.active .progressLabel {
+    color: var(--color-text-primary);
+}
+
+/* Step Content */
+.stepContent {
+    background: var(--color-bg-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    padding: var(--space-7);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.stepTitle {
+    font-size: var(--text-2xl);
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-2);
+}
+
+.stepDesc {
+    font-size: var(--text-base);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-6);
+}
+
+/* Options Grid */
+.optionsGrid {
+    display: grid;
+    gap: var(--space-4);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.optionCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-6);
+    background: var(--color-bg-deep);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.optionCard:hover {
+    border-color: var(--color-accent);
+}
+
+.optionCard.selected {
+    border-color: var(--color-accent);
+    box-shadow: var(--shadow-glow);
+}
+
+.optionIcon {
+    font-size: 2.5rem;
+}
+
+.optionLabel {
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+/* Services Grid */
+.servicesGrid {
+    display: grid;
+    gap: var(--space-3);
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+    .servicesGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.serviceCard {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    padding: var(--space-4);
+    background: var(--color-bg-deep);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-md);
+    text-align: left;
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.serviceCard:hover,
+.serviceCard.selected {
+    border-color: var(--color-accent);
+}
+
+.serviceTitle {
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+.serviceDesc {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+}
+
+/* Municipality Grid */
+.municipalityGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-bottom: var(--space-5);
+}
+
+.municipalityChip {
+    padding: var(--space-3) var(--space-5);
+    background: var(--color-bg-deep);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-full);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.municipalityChip:hover,
+.municipalityChip.selected {
+    border-color: var(--color-accent);
+    color: var(--color-text-primary);
+}
+
+.municipalityChip.selected {
+    background: var(--color-accent);
+    color: var(--color-text-on-accent);
+}
+
+/* Form */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-2);
+}
+
+.input,
+.textarea {
+    padding: var(--space-3) var(--space-4);
+    background: var(--color-bg-deep);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    color: var(--color-text-primary);
+    font-family: inherit;
+    font-size: var(--text-base);
+    transition: all var(--transition-fast);
+}
+
+.input:focus,
+.textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px var(--color-accent-glow);
+}
+
+/* Summary */
+.summary {
+    padding: var(--space-4);
+    background: var(--color-bg-elevated);
+    border-radius: var(--radius-md);
+}
+
+.summaryTitle {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-3);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.summaryItem {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-2);
+}
+
+.summaryItem span:last-child {
+    color: var(--color-text-primary);
+    font-weight: 500;
+}
+
+/* Buttons */
+.submitButton {
+    padding: var(--space-4) var(--space-6);
+    background: var(--color-accent);
+    color: var(--color-text-on-accent);
+    font-family: inherit;
+    font-size: var(--text-lg);
+    font-weight: 600;
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.submitButton:hover {
+    background: var(--color-accent-hover);
+    box-shadow: var(--shadow-glow-lg);
+    transform: translateY(-2px);
+}
+
+.backButton {
+    margin-top: var(--space-5);
+    padding: var(--space-2);
+    background: none;
+    border: none;
+    color: var(--color-text-muted);
+    font-size: var(--text-sm);
+    cursor: pointer;
+    transition: color var(--transition-fast);
+}
+
+.backButton:hover {
+    color: var(--color-accent);
+}
+
+/* Thank You */
+.thankYou {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    text-align: center;
+    padding: var(--space-7);
+}
+
+.thankYouIcon {
+    font-size: 4rem;
+    margin-bottom: var(--space-5);
+}
+
+.thankYouTitle {
+    font-size: var(--text-3xl);
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-4);
+}
+
+.thankYouText {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+    max-width: 400px;
+    margin-bottom: var(--space-6);
+}
+
+.thankYouLink {
+    color: var(--color-accent);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.thankYouLink:hover {
+    color: var(--color-accent-hover);
+}

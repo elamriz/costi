@@ -1,0 +1,82 @@
+.proofBar {
+    background: var(--color-bg-surface);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    padding: var(--space-4) 0;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+}
+
+.container::before,
+.container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.container::before {
+    left: 0;
+    background: linear-gradient(to right, var(--color-bg-surface), transparent);
+}
+
+.container::after {
+    right: 0;
+    background: linear-gradient(to left, var(--color-bg-surface), transparent);
+}
+
+.track {
+    display: flex;
+    gap: var(--space-8);
+    animation: scroll 30s linear infinite;
+    width: fit-content;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Pause on hover */
+.track:hover {
+    animation-play-state: paused;
+}
+
+.proofItem {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    white-space: nowrap;
+}
+
+.icon {
+    font-size: var(--text-xl);
+}
+
+.label {
+    font-size: var(--text-base);
+    font-weight: 500;
+    color: var(--color-text-primary);
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .track {
+        animation: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--space-6);
+        padding: 0 var(--space-5);
+    }
+}

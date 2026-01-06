@@ -1,0 +1,442 @@
+[
+    {
+        "slug": "uccle",
+        "name": "Uccle",
+        "nameFlemish": "Ukkel",
+        "type": "premium",
+        "metaTitle": "Électricien Uccle | COSTI ELEC — Devis Gratuit",
+        "metaDescription": "Électricien à Uccle pour maisons de maître, villas et appartements. Conformité RGIE, rénovation, bornes EV. Disponible 7j/7.",
+        "keywords": [
+            "électricien Uccle",
+            "mise en conformité RGIE Uccle",
+            "rénovation électrique Uccle"
+        ],
+        "neighborhoods": [
+            "Altitude 100",
+            "Fort Jaco",
+            "Vert Chasseur",
+            "Dieweg",
+            "Bois de la Cambre",
+            "Observatoire",
+            "Carloo",
+            "Stalle"
+        ],
+        "content": {
+            "intro": "Uccle, avec ses villas majestueuses et maisons de maître, possède un patrimoine architectural unique qui nécessite une expertise électrique spécialisée. Nos électriciens connaissent parfaitement les spécificités des installations anciennes de la commune.",
+            "housingTypes": [
+                "Villas",
+                "Maisons de maître",
+                "Appartements standing"
+            ],
+            "commonIssues": [
+                "Vieux tableaux à fusibles",
+                "Mise à la terre déficiente",
+                "Câblage ancien dans les murs épais",
+                "Prises insuffisantes pour les besoins modernes"
+            ],
+            "topServices": [
+                "conformite-rgie",
+                "renovation-electrique",
+                "borne-recharge-electrique"
+            ]
+        },
+        "coordinates": {
+            "lat": 50.8021,
+            "lng": 4.3365
+        }
+    },
+    {
+        "slug": "woluwe-saint-pierre",
+        "name": "Woluwe-Saint-Pierre",
+        "nameFlemish": "Sint-Pieters-Woluwe",
+        "type": "premium",
+        "metaTitle": "Électricien Woluwe-Saint-Pierre | COSTI ELEC",
+        "metaDescription": "Électricien à Woluwe-Saint-Pierre. Installation bornes EV, rénovation électrique maisons familiales, conformité RGIE. Devis gratuit.",
+        "keywords": [
+            "électricien Woluwe-Saint-Pierre",
+            "électricien WSP",
+            "borne recharge Woluwe"
+        ],
+        "neighborhoods": [
+            "Stockel",
+            "Joli-Bois",
+            "Chant d'Oiseau",
+            "Quatre Bras",
+            "Crainhem-Stockel"
+        ],
+        "content": {
+            "intro": "Woluwe-Saint-Pierre est un quartier résidentiel prisé où les familles recherchent des solutions électriques modernes et fiables. Notre expertise couvre les installations de bornes EV pour les nombreux véhicules électriques du quartier.",
+            "housingTypes": [
+                "Maisons familiales",
+                "Villas avec garage",
+                "Appartements"
+            ],
+            "commonIssues": [
+                "Manque de puissance pour bornes EV",
+                "Tableaux à moderniser",
+                "Installations des années 70-80"
+            ],
+            "topServices": [
+                "borne-recharge-electrique",
+                "renovation-electrique",
+                "conformite-rgie"
+            ]
+        },
+        "coordinates": {
+            "lat": 50.8379,
+            "lng": 4.4306
+        }
+    },
+    {
+        "slug": "woluwe-saint-lambert",
+        "name": "Woluwe-Saint-Lambert",
+        "nameFlemish": "Sint-Lambrechts-Woluwe",
+        "type": "premium",
+        "metaTitle": "Électricien Woluwe-Saint-Lambert | COSTI ELEC",
+        "metaDescription": "Électricien à Woluwe-Saint-Lambert pour appartements et maisons. Rénovation, tableaux électriques, vidéophones. Devis gratuit 7j/7.",
+        "keywords": [
+            "électricien Woluwe-Saint-Lambert",
+            "électricien WSL",
+            "rénovation électrique Woluwe"
+        ],
+        "neighborhoods": [
+            "Roodebeek",
+            "Tomberg",
+            "Georges Henri",
+            "Woluwe Shopping",
+            "Kapelleveld"
+        ],
+        "content": {
+            "intro": "Woluwe-Saint-Lambert combine appartements modernes et maisons des années 60-70 qui nécessitent souvent une mise aux normes électrique. Nous intervenons régulièrement dans les copropriétés pour les installations d'interphones et tableaux.",
+            "housingTypes": [
+                "Appartements",
+                "Maisons années 60",
+                "Immeubles résidentiels"
+            ],
+            "commonIssues": [
+                "Interphones vétustes",
+                "Tableaux sous-dimensionnés",
+                "Mise en conformité pour vente"
+            ],
+            "topServices": [
+                "tableau-electrique",
+                "videophone-interphone",
+                "conformite-rgie"
+            ]
+        },
+        "coordinates": {
+            "lat": 50.8466,
+            "lng": 4.4174
+        }
+    },
+    {
+        "slug": "ixelles",
+        "name": "Ixelles",
+        "nameFlemish": "Elsene",
+        "type": "premium",
+        "metaTitle": "Électricien Ixelles | RGIE & Rénovation | COSTI ELEC",
+        "metaDescription": "Électricien à Ixelles pour propriétaires et locataires. Mise en conformité RGIE, rénovation appartements, vidéophones. 7j/7.",
+        "keywords": [
+            "électricien Ixelles",
+            "mise en conformité RGIE Ixelles",
+            "rénovation électrique Ixelles"
+        ],
+        "neighborhoods": [
+            "Flagey",
+            "Châtelain",
+            "Matonge",
+            "Université",
+            "Porte de Namur",
+            "Etangs d'Ixelles",
+            "Boondael"
+        ],
+        "content": {
+            "intro": "Ixelles est une commune dynamique avec un parc immobilier varié : des maisons de maître autour de Flagey aux appartements étudiants près de l'ULB. De nombreux propriétaires nous sollicitent pour la mise en conformité RGIE avant location.",
+            "housingTypes": [
+                "Maisons de maître",
+                "Appartements locatifs",
+                "Studios",
+                "Immeubles de rapport"
+            ],
+            "commonIssues": [
+                "RGIE pour mise en location",
+                "Installations vétustes",
+                "Surcharge électrique",
+                "Interphones anciens"
+            ],
+            "topServices": [
+                "conformite-rgie",
+                "mise-en-securite",
+                "videophone-interphone"
+            ]
+        },
+        "coordinates": {
+            "lat": 50.8268,
+            "lng": 4.3742
+        }
+    },
+    {
+        "slug": "etterbeek",
+        "name": "Etterbeek",
+        "type": "premium",
+        "metaTitle": "Électricien Etterbeek | COSTI ELEC — Devis Gratuit",
+        "metaDescription": "Électricien à Etterbeek près du Quartier Européen. Rénovation, tableaux, mise en conformité RGIE. Intervention rapide 7j/7.",
+        "keywords": [
+            "électricien Etterbeek",
+            "rénovation électrique Etterbeek"
+        ],
+        "neighborhoods": [
+            "Quartier Européen",
+            "Cinquantenaire",
+            "Jourdan",
+            "Chasse",
+            "Germoir"
+        ],
+        "content": {
+            "intro": "Etterbeek, avec sa proximité des institutions européennes, accueille de nombreux expatriés qui découvrent les normes électriques belges. Nous accompagnons ces résidents pour comprendre et mettre en conformité leurs installations.",
+            "housingTypes": [
+                "Appartements",
+                "Maisons mitoyennes",
+                "Studios expats"
+            ],
+            "commonIssues": [
+                "Adaptation aux normes belges",
+                "Augmentation de puissance",
+                "Rénovation rapide"
+            ],
+            "topServices": [
+                "renovation-electrique",
+                "conformite-rgie",
+                "tableau-electrique"
+            ]
+        },
+        "coordinates": {
+            "lat": 50.8358,
+            "lng": 4.3908
+        }
+    },
+    {
+        "slug": "auderghem",
+        "name": "Auderghem",
+        "nameFlemish": "Oudergem",
+        "type": "premium",
+        "metaTitle": "Électricien Auderghem | COSTI ELEC",
+        "metaDescription": "Électricien à Auderghem pour maisons et jardins. Rénovation électrique, éclairage extérieur, bornes de recharge. Devis gratuit.",
+        "keywords": [
+            "électricien Auderghem",
+            "électricien Oudergem"
+        ],
+        "neighborhoods": [
+            "Rouge-Cloître",
+            "Herrmann-Debroux",
+            "Val Duchesse",
+            "Transvaal",
+            "Watermael"
+        ],
+        "content": {
+            "intro": "Auderghem offre un cadre verdoyant avec des maisons familiales dotées de jardins. Nos services incluent l'éclairage de jardin, les installations extérieures et les bornes de recharge pour cette commune résidentielle.",
+            "housingTypes": [
+                "Maisons avec jardin",
+                "Villas",
+                "Appartements"
+            ],
+            "commonIssues": [
+                "Éclairage extérieur",
+                "Prises jardin/terrasse",
+                "Installation abris de jardin"
+            ],
+            "topServices": [
+                "renovation-electrique",
+                "borne-recharge-electrique",
+                "conformite-rgie"
+            ]
+        },
+        "coordinates": {
+            "lat": 50.8142,
+            "lng": 4.4281
+        }
+    },
+    {
+        "slug": "watermael-boitsfort",
+        "name": "Watermael-Boitsfort",
+        "nameFlemish": "Watermaal-Bosvoorde",
+        "type": "premium",
+        "metaTitle": "Électricien Watermael-Boitsfort | COSTI ELEC",
+        "metaDescription": "Électricien à Watermael-Boitsfort, spécialiste cités-jardins et patrimoine. Rénovation discrète, conformité RGIE. Devis gratuit.",
+        "keywords": [
+            "électricien Watermael-Boitsfort",
+            "électricien cité-jardin"
+        ],
+        "neighborhoods": [
+            "Le Logis",
+            "Floréal",
+            "Coin du Balai",
+            "Boitsfort Centre",
+            "Trois Tilleuls"
+        ],
+        "content": {
+            "intro": "Watermael-Boitsfort abrite les célèbres cités-jardins Le Logis et Floréal, classées au patrimoine. Nos électriciens sont formés pour intervenir avec respect du patrimoine architectural tout en modernisant les installations.",
+            "housingTypes": [
+                "Maisons cités-jardins",
+                "Villas",
+                "Maisons de caractère"
+            ],
+            "commonIssues": [
+                "Rénovation patrimoniale",
+                "Câblage apparent à dissimuler",
+                "Respect de l'architecture"
+            ],
+            "topServices": [
+                "renovation-electrique",
+                "conformite-rgie",
+                "mise-en-securite"
+            ]
+        },
+        "coordinates": {
+            "lat": 50.7978,
+            "lng": 4.4072
+        }
+    },
+    {
+        "slug": "est-bruxelles",
+        "name": "Est de Bruxelles",
+        "type": "cluster",
+        "municipalities": [
+            "Tervuren",
+            "Kraainem",
+            "Wezembeek-Oppem"
+        ],
+        "metaTitle": "Électricien Tervuren, Kraainem & Wezembeek | COSTI ELEC",
+        "metaDescription": "Électricien dans l'Est de Bruxelles: Tervuren, Kraainem, Wezembeek-Oppem. Villas, maisons familiales. Devis gratuit 7j/7.",
+        "keywords": [
+            "électricien Tervuren",
+            "électricien Kraainem",
+            "électricien Wezembeek-Oppem"
+        ],
+        "neighborhoods": [
+            "Centre Tervuren",
+            "Musée de l'Afrique",
+            "Kraainem Centre",
+            "Wezembeek Centre"
+        ],
+        "content": {
+            "intro": "L'est de Bruxelles regroupe des communes résidentielles prisées comme Tervuren, Kraainem et Wezembeek-Oppem. Ces quartiers abritent de grandes villas familiales nécessitant des installations électriques performantes.",
+            "housingTypes": [
+                "Grandes villas",
+                "Maisons familiales",
+                "Propriétés avec piscine"
+            ],
+            "commonIssues": [
+                "Puissance insuffisante",
+                "Bornes EV pour 2+ véhicules",
+                "Domotique avancée"
+            ],
+            "topServices": [
+                "borne-recharge-electrique",
+                "renovation-electrique",
+                "tableau-electrique"
+            ]
+        },
+        "coordinates": {
+            "lat": 50.8281,
+            "lng": 4.5134
+        }
+    },
+    {
+        "slug": "sud-bruxelles",
+        "name": "Sud de Bruxelles",
+        "type": "cluster",
+        "municipalities": [
+            "Overijse",
+            "Hoeilaart",
+            "Rhode-Saint-Genèse",
+            "Linkebeek",
+            "Drogenbos"
+        ],
+        "metaTitle": "Électricien Rhode-Saint-Genèse, Overijse & Hoeilaart",
+        "metaDescription": "Électricien au sud de Bruxelles: Rhode-Saint-Genèse, Overijse, Hoeilaart, Linkebeek. Villas, conformité RGIE. Devis gratuit.",
+        "keywords": [
+            "électricien Rhode-Saint-Genèse",
+            "électricien Overijse",
+            "électricien Hoeilaart"
+        ],
+        "neighborhoods": [
+            "Centre Rhode",
+            "Overijse Centre",
+            "Hoeilaart Gare",
+            "Linkebeek Village"
+        ],
+        "content": {
+            "intro": "Le sud de Bruxelles offre un cadre verdoyant avec de nombreuses villas familiales. Ces communes du Brabant flamand comptent une importante communauté internationale recherchant des électriciens fiables.",
+            "housingTypes": [
+                "Villas",
+                "Maisons de campagne",
+                "Propriétés avec terrain"
+            ],
+            "commonIssues": [
+                "Installations anciennes",
+                "Mises aux normes pour vente",
+                "Éclairage jardin étendu"
+            ],
+            "topServices": [
+                "conformite-rgie",
+                "renovation-electrique",
+                "borne-recharge-electrique"
+            ]
+        },
+        "coordinates": {
+            "lat": 50.7652,
+            "lng": 4.3882
+        }
+    },
+    {
+        "slug": "peripherie-nord-ouest",
+        "name": "Périphérie Nord-Ouest",
+        "type": "cluster",
+        "municipalities": [
+            "Zaventem",
+            "Vilvoorde",
+            "Dilbeek",
+            "Sint-Pieters-Leeuw",
+            "Waterloo",
+            "Braine-l'Alleud"
+        ],
+        "metaTitle": "Électricien Waterloo, Zaventem & Dilbeek | COSTI ELEC",
+        "metaDescription": "Électricien en périphérie de Bruxelles: Waterloo, Zaventem, Vilvoorde, Dilbeek. Résidentiel et commercial. Devis gratuit.",
+        "keywords": [
+            "électricien Waterloo",
+            "électricien Zaventem",
+            "électricien Dilbeek",
+            "électricien Vilvoorde"
+        ],
+        "neighborhoods": [
+            "Waterloo Centre",
+            "Zaventem Village",
+            "Dilbeek Centre",
+            "Vilvoorde Centre"
+        ],
+        "content": {
+            "intro": "La périphérie nord-ouest de Bruxelles combine zones résidentielles et commerciales. De Waterloo à Zaventem, nous intervenons pour les particuliers comme pour les petites entreprises.",
+            "housingTypes": [
+                "Maisons neuves",
+                "Villas",
+                "Locaux commerciaux",
+                "Bureaux"
+            ],
+            "commonIssues": [
+                "Nouvelles constructions",
+                "Conformité commerciale",
+                "Installations professionnelles"
+            ],
+            "topServices": [
+                "tableau-electrique",
+                "conformite-rgie",
+                "borne-recharge-electrique"
+            ]
+        },
+        "coordinates": {
+            "lat": 50.8612,
+            "lng": 4.2891
+        }
+    }
+]
