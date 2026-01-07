@@ -63,8 +63,10 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    // Add your verification codes here
     // google: "your-google-verification-code",
+  },
+  icons: {
+    icon: "/1-f86c1c56.ico",
   },
 };
 

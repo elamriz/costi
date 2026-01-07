@@ -77,7 +77,7 @@ export function Hero() {
                     {/* Compact stats row */}
                     <div className={styles.statsRow}>
                         <div className={styles.stat}>
-                            <span className={styles.statNumber}>10+</span>
+                            <span className={styles.statNumber}>5+</span>
                             <span className={styles.statLabel}>ans</span>
                         </div>
                         <div className={styles.statDivider} />
