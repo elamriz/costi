@@ -157,7 +157,19 @@
 .optionsGrid {
     display: grid;
     gap: var(--space-4);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 400px) {
+    .optionsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 640px) {
+    .optionsGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .optionCard {
@@ -165,12 +177,18 @@
     flex-direction: column;
     align-items: center;
     gap: var(--space-3);
-    padding: var(--space-6);
+    padding: var(--space-5);
     background: var(--color-bg-deep);
     border: 2px solid var(--color-border);
     border-radius: var(--radius-lg);
     cursor: pointer;
     transition: all var(--transition-base);
+}
+
+@media (min-width: 640px) {
+    .optionCard {
+        padding: var(--space-6);
+    }
 }
 
 .optionCard:hover {

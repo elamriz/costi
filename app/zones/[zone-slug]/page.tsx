@@ -146,9 +146,6 @@ export default async function ZonePage({ params }: Props) {
                                             <p className={styles.serviceDesc}>
                                                 {service.shortDescription}
                                             </p>
-                                            <span className={styles.servicePrice}>
-                                                À partir de {service.priceFrom}€
-                                            </span>
                                         </Link>
                                     )
                             )}

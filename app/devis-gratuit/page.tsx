@@ -22,31 +22,36 @@ export default function DevisGratuitPage() {
         email: "",
         message: "",
     });
-    const [isSubmitted, setIsSubmitted] = useState(false);
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        // In production, this would send to an API
-        setIsSubmitted(true);
-    };
 
-    if (isSubmitted) {
-        return (
-            <div className={styles.page}>
-                <div className={styles.thankYou}>
-                    <span className={styles.thankYouIcon}>✅</span>
-                    <h1 className={styles.thankYouTitle}>Demande envoyée !</h1>
-                    <p className={styles.thankYouText}>
-                        Merci pour votre demande. Nous vous recontacterons sous 24h avec
-                        votre devis personnalisé.
-                    </p>
-                    <a href="/" className={styles.thankYouLink}>
-                        Retour à l&apos;accueil
-                    </a>
-                </div>
-            </div>
-        );
-    }
+        const selectedServiceData = services.find((s) => s.slug === selectedService);
+        const subject = `Demande de devis - ${selectedServiceData?.title || "Service"} - ${municipality}`;
+
+        const body = `Bonjour COSTI ELEC,
+
+Je souhaite recevoir un devis pour le service suivant :
+
+📋 RÉCAPITULATIF
+Type de propriété : ${propertyType}
+Service demandé : ${selectedServiceData?.title || selectedService}
+Commune : ${municipality}
+
+👤 MES COORDONNÉES
+Nom : ${formData.name}
+Téléphone : ${formData.phone}
+${formData.email ? `Email : ${formData.email}` : ""}
+
+${formData.message ? `💬 MESSAGE\n${formData.message}` : ""}
+
+Merci de me recontacter dans les meilleurs délais.
+
+Cordialement,
+${formData.name}`;
+
+        window.location.href = `mailto:costi.elec@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    };
 
     return (
         <div className={styles.page}>

@@ -1,15 +1,34 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 import type { Metadata } from "next";
 import styles from "./page.module.css";
-
-export const metadata: Metadata = {
-    title: "Nos Réalisations | COSTI ELEC — Travaux Électriques Bruxelles",
-    description:
-        "Découvrez nos travaux : tableaux électriques, bornes de recharge, rénovations et vidéophonies à Bruxelles et en périphérie.",
-};
+import { BeforeAfterSlider } from "@/components/ui/BeforeAfterSlider";
 
 const projects = [
     {
+        type: "slider" as const,
+        beforeImage: "/images/work/rgie_before_2.png",
+        afterImage: "/images/work/rgie_after_2.png",
+        title: "Après mise en conformité",
+        location: "Uccle",
+        category: "RGIE",
+        beforeAlt: "Installation électrique non-conforme RGIE",
+        afterAlt: "Installation électrique conforme RGIE",
+    },
+    {
+        type: "slider" as const,
+        beforeImage: "/images/work/rgie_before.png",
+        afterImage: "/images/work/rgie_after.png",
+        title: "Mise en conformité RGIE",
+        location: "Bruxelles",
+        category: "RGIE",
+        beforeAlt: "Tableau électrique avant mise en conformité RGIE",
+        afterAlt: "Tableau électrique après mise en conformité RGIE",
+    },
+    {
+        type: "image" as const,
         src: "/images/work/ev_hero.png",
         title: "Borne de recharge Alfen 22kW",
         location: "Woluwe-Saint-Pierre",
@@ -17,6 +36,7 @@ const projects = [
         alt: "Installation professionnelle de borne de recharge 22kW à Woluwe-Saint-Pierre",
     },
     {
+        type: "image" as const,
         src: "/images/work/panel_uccle.png",
         title: "Tableau électrique Hager",
         location: "Uccle",
@@ -24,6 +44,7 @@ const projects = [
         alt: "Tableau électrique moderne Hager installé à Uccle",
     },
     {
+        type: "image" as const,
         src: "/images/work/bornederecharge2.JPG",
         title: "Borne de recharge résidentielle",
         location: "Dilbeek",
@@ -31,6 +52,7 @@ const projects = [
         alt: "Installation borne de recharge résidentielle à Dilbeek",
     },
     {
+        type: "image" as const,
         src: "/images/work/project_renovation_ixelles.png",
         title: "Rénovation complète appartement",
         location: "Ixelles",
@@ -38,6 +60,7 @@ const projects = [
         alt: "Rénovation électrique complète d'un appartement à Ixelles",
     },
     {
+        type: "image" as const,
         src: "/images/work/borne4.JPG",
         title: "Borne Wallbox Pulsar",
         location: "Waterloo",
@@ -45,20 +68,7 @@ const projects = [
         alt: "Installation Wallbox Pulsar à Waterloo",
     },
     {
-        src: "/images/work/rgie_before.png",
-        title: "Avant mise en conformité",
-        location: "Bruxelles",
-        category: "RGIE",
-        alt: "Tableau électrique avant mise en conformité RGIE",
-    },
-    {
-        src: "/images/work/rgie_after.png",
-        title: "Après mise en conformité",
-        location: "Uccle",
-        category: "RGIE",
-        alt: "Tableau électrique après mise en conformité RGIE à Uccle",
-    },
-    {
+        type: "image" as const,
         src: "/images/work/borne3.JPG",
         title: "Installation borne garage",
         location: "Tervuren",
@@ -66,6 +76,7 @@ const projects = [
         alt: "Installation borne de recharge dans garage à Tervuren",
     },
     {
+        type: "image" as const,
         src: "/images/work/project_intercom_etterbeek.png",
         title: "Vidéophonie immeuble 12 unités",
         location: "Etterbeek",
@@ -73,6 +84,7 @@ const projects = [
         alt: "Installation système vidéophonie dans immeuble à Etterbeek",
     },
     {
+        type: "image" as const,
         src: "/images/work/tableau2.JPG",
         title: "Tableau professionnel",
         location: "Zaventem",
@@ -80,6 +92,7 @@ const projects = [
         alt: "Installation tableau électrique professionnel à Zaventem",
     },
     {
+        type: "image" as const,
         src: "/images/work/renovation_ixelles.png",
         title: "Câblage rénovation",
         location: "Ixelles",
@@ -87,6 +100,7 @@ const projects = [
         alt: "Rénovation électrique câblage professionnel à Ixelles",
     },
     {
+        type: "image" as const,
         src: "/images/work/ev_charger_woluwe.png",
         title: "Borne Wallbox extérieure",
         location: "Woluwe-Saint-Pierre",
@@ -94,6 +108,7 @@ const projects = [
         alt: "Borne de recharge Wallbox extérieure à Woluwe-Saint-Pierre",
     },
     {
+        type: "image" as const,
         src: "/images/work/project_panel_auderghem.png",
         title: "Tableau 40 modules",
         location: "Auderghem",
@@ -101,6 +116,7 @@ const projects = [
         alt: "Installation tableau électrique 40 modules à Auderghem",
     },
     {
+        type: "image" as const,
         src: "/images/work/videophone_etterbeek.png",
         title: "Vidéophone moderne",
         location: "Etterbeek",
@@ -108,6 +124,7 @@ const projects = [
         alt: "Installation vidéophone moderne à Etterbeek",
     },
     {
+        type: "image" as const,
         src: "/images/work/socket_auderghem.png",
         title: "Finitions soignées",
         location: "Auderghem",
@@ -119,6 +136,13 @@ const projects = [
 const categories = ["Tous", "Borne EV", "Tableau", "RGIE", "Rénovation", "Vidéophone"];
 
 export default function RealisationsPage() {
+    const [activeCategory, setActiveCategory] = useState("Tous");
+
+    const filteredProjects =
+        activeCategory === "Tous"
+            ? projects
+            : projects.filter((p) => p.category === activeCategory);
+
     return (
         <div className={styles.page}>
             {/* Hero */}
@@ -157,12 +181,13 @@ export default function RealisationsPage() {
             {/* Gallery */}
             <section className={styles.gallery}>
                 <div className={styles.container}>
-                    {/* Category Filter (visual only for now) */}
+                    {/* Category Filter */}
                     <div className={styles.filters}>
-                        {categories.map((cat, i) => (
+                        {categories.map((cat) => (
                             <button
-                                key={i}
-                                className={`${styles.filterBtn} ${i === 0 ? styles.active : ""}`}
+                                key={cat}
+                                className={`${styles.filterBtn} ${activeCategory === cat ? styles.active : ""}`}
+                                onClick={() => setActiveCategory(cat)}
                             >
                                 {cat}
                             </button>
@@ -171,33 +196,56 @@ export default function RealisationsPage() {
 
                     {/* Masonry Grid */}
                     <div className={styles.grid}>
-                        {projects.map((project, index) => (
+                        {filteredProjects.map((project, index) => (
                             <div
                                 key={index}
                                 className={`${styles.card} ${index % 5 === 0 ? styles.cardLarge : ""}`}
                             >
-                                <div className={styles.imageWrapper}>
-                                    <Image
-                                        src={project.src}
-                                        alt={project.alt}
-                                        width={600}
-                                        height={400}
-                                        className={styles.image}
-                                    />
-                                    <div className={styles.overlay}>
-                                        <span className={styles.category}>{project.category}</span>
-                                    </div>
-                                </div>
-                                <div className={styles.cardContent}>
-                                    <h3 className={styles.cardTitle}>{project.title}</h3>
-                                    <span className={styles.cardLocation}>
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="14" height="14">
-                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                                            <circle cx="12" cy="10" r="3" />
-                                        </svg>
-                                        {project.location}
-                                    </span>
-                                </div>
+                                {project.type === "slider" ? (
+                                    <>
+                                        <BeforeAfterSlider
+                                            beforeImage={project.beforeImage}
+                                            afterImage={project.afterImage}
+                                            beforeAlt={project.beforeAlt}
+                                            afterAlt={project.afterAlt}
+                                        />
+                                        <div className={styles.cardContent}>
+                                            <h3 className={styles.cardTitle}>{project.title}</h3>
+                                            <span className={styles.cardLocation}>
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="14" height="14">
+                                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                                    <circle cx="12" cy="10" r="3" />
+                                                </svg>
+                                                {project.location}
+                                            </span>
+                                        </div>
+                                    </>
+                                ) : (
+                                    <>
+                                        <div className={styles.imageWrapper}>
+                                            <Image
+                                                src={project.src}
+                                                alt={project.alt}
+                                                width={600}
+                                                height={400}
+                                                className={styles.image}
+                                            />
+                                            <div className={styles.overlay}>
+                                                <span className={styles.category}>{project.category}</span>
+                                            </div>
+                                        </div>
+                                        <div className={styles.cardContent}>
+                                            <h3 className={styles.cardTitle}>{project.title}</h3>
+                                            <span className={styles.cardLocation}>
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="14" height="14">
+                                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                                    <circle cx="12" cy="10" r="3" />
+                                                </svg>
+                                                {project.location}
+                                            </span>
+                                        </div>
+                                    </>
+                                )}
                             </div>
                         ))}
                     </div>

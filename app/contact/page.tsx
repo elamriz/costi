@@ -1,13 +1,56 @@
+"use client";
+
+import { useState } from "react";
 import type { Metadata } from "next";
 import styles from "./page.module.css";
 
-export const metadata: Metadata = {
-    title: "Contact | COSTI ELEC — Électricien Bruxelles",
-    description:
-        "Contactez COSTI ELEC, votre électricien à Bruxelles. Téléphone, WhatsApp, email. Disponible 7j/7. Devis gratuit.",
-};
-
 export default function ContactPage() {
+    const [formData, setFormData] = useState({
+        name: "",
+        phone: "",
+        email: "",
+        service: "",
+        message: "",
+    });
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+
+        const serviceLabel =
+            formData.service === "conformite-rgie"
+                ? "Conformité RGIE"
+                : formData.service === "renovation"
+                    ? "Rénovation électrique"
+                    : formData.service === "tableau"
+                        ? "Tableau électrique"
+                        : formData.service === "securite"
+                            ? "Mise en sécurité"
+                            : formData.service === "videophone"
+                                ? "Vidéophone / Interphone"
+                                : formData.service === "borne"
+                                    ? "Borne de recharge"
+                                    : formData.service;
+
+        const subject = `Contact COSTI ELEC${formData.service ? ` - ${serviceLabel}` : ""}`;
+
+        const body = `Bonjour COSTI ELEC,
+
+👤 MES COORDONNÉES
+Nom : ${formData.name}
+Téléphone : ${formData.phone}
+${formData.email ? `Email : ${formData.email}` : ""}
+
+${formData.service ? `🔧 SERVICE CONCERNÉ\n${serviceLabel}\n\n` : ""}💬 MON MESSAGE
+${formData.message}
+
+Merci de me recontacter dans les meilleurs délais.
+
+Cordialement,
+${formData.name}`;
+
+        window.location.href = `mailto:costi.elec@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    };
+
     return (
         <div className={styles.page}>
             <section className={styles.hero}>
@@ -82,7 +125,7 @@ export default function ContactPage() {
                         {/* Contact Form */}
                         <div className={styles.formColumn}>
                             <h2 className={styles.formTitle}>Envoyez-nous un message</h2>
-                            <form className={styles.form}>
+                            <form className={styles.form} onSubmit={handleSubmit}>
                                 <div className={styles.formRow}>
                                     <div className={styles.formGroup}>
                                         <label htmlFor="name" className={styles.label}>
@@ -95,6 +138,10 @@ export default function ContactPage() {
                                             required
                                             className={styles.input}
                                             placeholder="Votre nom"
+                                            value={formData.name}
+                                            onChange={(e) =>
+                                                setFormData({ ...formData, name: e.target.value })
+                                            }
                                         />
                                     </div>
                                     <div className={styles.formGroup}>
@@ -108,6 +155,10 @@ export default function ContactPage() {
                                             required
                                             className={styles.input}
                                             placeholder="+32 4XX XX XX XX"
+                                            value={formData.phone}
+                                            onChange={(e) =>
+                                                setFormData({ ...formData, phone: e.target.value })
+                                            }
                                         />
                                     </div>
                                 </div>
@@ -122,6 +173,10 @@ export default function ContactPage() {
                                         name="email"
                                         className={styles.input}
                                         placeholder="votre@email.be"
+                                        value={formData.email}
+                                        onChange={(e) =>
+                                            setFormData({ ...formData, email: e.target.value })
+                                        }
                                     />
                                 </div>
 
@@ -129,7 +184,15 @@ export default function ContactPage() {
                                     <label htmlFor="service" className={styles.label}>
                                         Service souhaité
                                     </label>
-                                    <select id="service" name="service" className={styles.select}>
+                                    <select
+                                        id="service"
+                                        name="service"
+                                        className={styles.select}
+                                        value={formData.service}
+                                        onChange={(e) =>
+                                            setFormData({ ...formData, service: e.target.value })
+                                        }
+                                    >
                                         <option value="">Sélectionnez un service</option>
                                         <option value="conformite-rgie">Conformité RGIE</option>
                                         <option value="renovation">Rénovation électrique</option>
@@ -152,6 +215,10 @@ export default function ContactPage() {
                                         rows={5}
                                         className={styles.textarea}
                                         placeholder="Décrivez votre projet ou votre question..."
+                                        value={formData.message}
+                                        onChange={(e) =>
+                                            setFormData({ ...formData, message: e.target.value })
+                                        }
                                     />
                                 </div>
 

@@ -6,7 +6,7 @@ import styles from "./page.module.css";
 export const metadata: Metadata = {
     title: "À Propos | COSTI ELEC — Électricien à Bruxelles",
     description:
-        "Découvrez COSTI ELEC, votre électricien de confiance. Plus de 10 ans d'expérience, certifié RGIE, intervenant à Bruxelles et en Belgique.",
+        "Découvrez COSTI ELEC, votre électricien de confiance. 5 ans d'expérience, certifié RGIE, intervenant à Bruxelles et en Belgique.",
 };
 
 export default function AboutPage() {
@@ -19,7 +19,7 @@ export default function AboutPage() {
                         Un électricien <span className={styles.highlight}>passionné</span>
                     </h1>
                     <p className={styles.description}>
-                        Depuis plus de 10 ans, COSTI ELEC accompagne les particuliers et
+                        Depuis 5 ans, COSTI ELEC accompagne les particuliers et
                         professionnels dans tous leurs projets électriques.
                     </p>
                 </div>
@@ -30,8 +30,8 @@ export default function AboutPage() {
                     <div className={styles.grid}>
                         <div className={styles.imageWrapper}>
                             <Image
-                                src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&h=700&fit=crop"
-                                alt="Électricien au travail"
+                                src="/images/electrician_working.png"
+                                alt="Électricien COSTI ELEC au travail"
                                 width={600}
                                 height={700}
                                 className={styles.image}
@@ -41,15 +41,17 @@ export default function AboutPage() {
                             <h2 className={styles.sectionTitle}>Notre histoire</h2>
                             <p className={styles.text}>
                                 COSTI ELEC est né de la passion pour l&apos;électricité et du
-                                désir d&apos;offrir un service de qualité à tous. Fort de plus
-                                de 10 années d&apos;expérience dans le domaine, nous avons
-                                développé une expertise reconnue dans la région de Bruxelles.
+                                désir d&apos;offrir un service de qualité irréprochable. Avec
+                                5 années d&apos;expérience intensive dans le domaine, nous avons
+                                développé une expertise solide et reconnue dans la région de
+                                Bruxelles et ses environs.
                             </p>
                             <p className={styles.text}>
                                 Notre mission est simple : fournir des solutions électriques
                                 fiables, sécurisées et conformes aux normes RGIE, tout en
-                                garantissant une transparence totale sur nos tarifs et nos
-                                délais.
+                                garantissant une transparence totale sur nos tarifs, nos
+                                délais et la qualité de notre travail. Chaque projet est une
+                                opportunité de démontrer notre savoir-faire.
                             </p>
                         </div>
                     </div>

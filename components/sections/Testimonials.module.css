@@ -61,13 +61,17 @@
 
 /* Card */
 .card {
-    display: flex;
-    flex-direction: column;
-    padding: var(--space-6);
-    background: var(--color-bg-deep);
+    background: var(--color-bg-surface);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg);
+    padding: var(--space-4);
     transition: all var(--transition-slow);
+}
+
+@media (min-width: 640px) {
+    .card {
+        padding: var(--space-6);
+    }
 }
 
 .card:hover {
@@ -88,12 +92,18 @@
 }
 
 .quote {
-    font-size: var(--text-base);
+    font-size: var(--text-sm);
+    line-height: var(--leading-relaxed);
     color: var(--color-text-secondary);
-    line-height: 1.7;
+    margin-bottom: var(--space-3);
     font-style: italic;
-    flex: 1;
-    margin-bottom: var(--space-5);
+}
+
+@media (min-width: 640px) {
+    .quote {
+        font-size: var(--text-base);
+        margin-bottom: var(--space-4);
+    }
 }
 
 .author {

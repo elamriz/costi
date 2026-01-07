@@ -48,9 +48,6 @@ export default function ServicesPage() {
                                     <span className={styles.cardIcon}>
                                         {iconMap[service.icon] || "⚡"}
                                     </span>
-                                    <span className={styles.cardPrice}>
-                                        À partir de {service.priceFrom}€
-                                    </span>
                                 </div>
                                 <h2 className={styles.cardTitle}>{service.title}</h2>
                                 <p className={styles.cardDescription}>{service.description}</p>

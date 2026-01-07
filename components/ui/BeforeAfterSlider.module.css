@@ -1,0 +1,110 @@
+.container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    cursor: ew-resize;
+    user-select: none;
+}
+
+.imageWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+    object-fit: cover;
+}
+
+/* Labels */
+.label {
+    position: absolute;
+    top: var(--space-4);
+    padding: var(--space-2) var(--space-4);
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px);
+    color: white;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: var(--radius-md);
+    z-index: 2;
+}
+
+.label[data-position="left"] {
+    left: var(--space-4);
+}
+
+.label[data-position="right"] {
+    right: var(--space-4);
+}
+
+/* Slider */
+.slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    transform: translateX(-50%);
+    cursor: ew-resize;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sliderLine {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.sliderButton {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    color: var(--color-text-primary);
+    transition: transform var(--transition-fast);
+}
+
+.slider:hover .sliderButton,
+.slider:active .sliderButton {
+    transform: scale(1.1);
+}
+
+.sliderButton svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+    .sliderButton {
+        width: 40px;
+        height: 40px;
+    }
+
+    .sliderButton svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .label {
+        font-size: var(--text-xs);
+        padding: var(--space-1) var(--space-3);
+    }
+}

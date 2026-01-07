@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./Footer.module.css";
 import services from "@/lib/data/services.json";
 
@@ -9,14 +10,18 @@ export function Footer() {
                 <div className={styles.grid}>
                     {/* Brand Column */}
                     <div className={styles.brandColumn}>
-                        <Link href="/" className={styles.logo}>
-                            <span className={styles.logoText}>COSTI</span>
-                            <span className={styles.logoBolt}>⚡</span>
-                            <span className={styles.logoAccent}>ELEC</span>
+                        <Link href="/" className={styles.footerLogo}>
+                            <Image
+                                src="/logo.png"
+                                alt="COSTI ELEC - Électricien Bruxelles"
+                                width={120}
+                                height={40}
+                                className={styles.logoImage}
+                            />
                         </Link>
                         <p className={styles.tagline}>
-                            Votre électricien de confiance. Qualité, réactivité et
-                            transparence. Bruxelles, alentours et toute la Belgique.
+                            Votre électricien de confiance à Bruxelles. Certifié RGIE,
+                            disponible 7j/7 pour tous vos travaux électriques.
                         </p>
                         <div className={styles.badges}>
                             <span className={styles.badge}>Certifié RGIE</span>
@@ -119,6 +124,18 @@ export function Footer() {
                             Plan du site
                         </Link>
                     </div>
+                </div>
+
+                {/* Creator Credit */}
+                <div className={styles.creatorCredit}>
+                    Site créé par{" "}
+                    <a
+                        href="https://ryzq.dev"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <span className={styles.creatorBrand}>RYZQ</span>.dev
+                    </a>
                 </div>
             </div>
         </footer>
